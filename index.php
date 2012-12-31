@@ -62,7 +62,7 @@ if(!file_exists("data/".$config['cache']) || time() - filemtime("data/".$config[
 							<div class='category' style='background-color: #".$color.";'></div>
 							<b>".$download['name']."</b>
 							<span class='commitverlog'>
-								v".$download['version']."<br />
+								".(!empty($download['version']) ? "v".$download['version']."<br />" : "")."
 								<a href='log.php?repo=".$download['github']."'>".INDEX_LAN03."</a>, <a href='".$repo_url."/issues'>".INDEX_LAN04."</a>
 							</span>
 							<br />
