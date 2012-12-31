@@ -27,7 +27,7 @@ Here is an example XML file:
 	<cartulary>
 
 		<category name="PHP" color="a53539">
-			<download name="Cartulary" info="Download Manager" github="cartulary" adfly="" file="" free="true" />
+			<download name="Cartulary" info="Download Manager" github="cartulary" version="0.1.0" adfly="" file="" free="true" />
 		</category>
 
 	</cartulary>
@@ -45,6 +45,7 @@ In the download tag;
 * `name` - The name of the download.
 * `info` - A short description of what the download is.
 * `github` - The GitHub repository name for the download.
+* `version` - The current version of the download.
 * `adfly` - Optional AdF.ly ID to the download location.
 * `file` - The filename for the download.
 * `free` - This is currently not used. Will be used for future premium support.

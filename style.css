@@ -55,18 +55,12 @@ h2 {
 	float: left;
 	padding: 10px;
 	margin: 10px;
-	width: 214px;
+	width: 299px;
 	background-color: #333;
 	border-top: 1px solid #383838;
 	border-left: 1px solid #383838;
 	border-bottom: 1px solid #444;
 	border-right: 1px solid #444;
-}
-#content .download-block b {
-	font-size: 0.9em;
-}
-#content .download-block span {
-	font-size: 0.8em;
 }
 #content .download-block .category {
 	width: 6px;
@@ -74,8 +68,9 @@ h2 {
 	float: left;
 	margin: 0 10px 0 0;
 }
-#content .download-block .commits {
+#content .download-block .commitverlog {
 	float: right;
+	text-align: right;
 	font-size: 0.7em;
 }
 
