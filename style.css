@@ -1,0 +1,156 @@
+body {
+	background-color: #222;
+	color: #eee;
+	margin: 0;
+	font-family: 'Droid Sans', sans-serif;
+	text-shadow: 0px 1px #111;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h2 {
+	margin: 10px 0;
+	padding: 10px;
+	font-size: 1.2em;
+	background-color: #333;
+	border-top: 1px solid #383838;
+	border-left: 1px solid #383838;
+	border-bottom: 1px solid #444;
+	border-right: 1px solid #444;
+}
+
+#wrap {
+	margin: 0 auto;
+	width: 1024px;
+}
+
+#bar {
+	margin-top: 40px;
+	width: 100%;
+	padding: 20px;
+	background-color: #333;
+	border-top: 1px solid #383838;
+	border-left: 1px solid #383838;
+	border-bottom: 1px solid #444;
+	border-right: 1px solid #444;
+}
+#bar .tag {
+	font-size: 0.7em;
+	margin-left: 5px;
+}
+
+#content {
+	margin-top: 20px;
+	margin-bottom: -20px;
+	width: 100%;
+	padding-left: 20px;
+	font-size: 0.8em;
+	overflow: auto;
+}
+
+#content .download-block {
+	float: left;
+	padding: 10px;
+	margin: 10px;
+	width: 214px;
+	background-color: #333;
+	border-top: 1px solid #383838;
+	border-left: 1px solid #383838;
+	border-bottom: 1px solid #444;
+	border-right: 1px solid #444;
+}
+#content .download-block b {
+	font-size: 0.9em;
+}
+#content .download-block span {
+	font-size: 0.8em;
+}
+#content .download-block .category {
+	width: 6px;
+	height: 30px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+#content .download-block .commits {
+	float: right;
+	font-size: 0.7em;
+}
+
+#footer {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: 100%;
+	font-size: 0.7em;
+	padding: 20px;
+	background-color: #333;
+	border-top: 1px solid #383838;
+	border-left: 1px solid #383838;
+	border-bottom: 1px solid #444;
+	border-right: 1px solid #444;
+}
+#footer .copyright {
+	text-align: right;
+}
+#footer .copyright a {
+	font-size: 1.4em;
+}
+#footer .categories {
+	float: left;
+	word-spacing: 20px;
+}
+.count, .rcount, .button {
+    background-color: #444;
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 4px;
+    position: relative;
+    border: 1px solid #555;
+    height: 12px;
+    text-align: center;
+    margin-right: 4px;
+   	letter-spacing: 1px;
+}
+.count a, .rcount a {
+	color: #fff;
+}
+.count:after {
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 5px solid #555;
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 5px;
+}
+.rcount:after {
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #555;
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 5px;
+}
+
+.commit {
+	margin: 10px 0;
+	padding: 10px;
+	background-color: #333;
+	border-top: 1px solid #383838;
+	border-left: 1px solid #383838;
+	border-bottom: 1px solid #444;
+	border-right: 1px solid #444;
+}
+.commit span {
+	float: right;
+	font-size: 0.8em;
+}
+.files {
+	display:none;
+	max-height: 200px;
+	overflow: auto;
+	padding-top: 10px;
+}

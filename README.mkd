@@ -1,0 +1,88 @@
+# Cartulary
+
+Cartulary is a download manager powered by XML, PHP, and text files.
+
+The information for each download is stored in an XML file and is served up using PHP. Statistics (download counts, repo forks, and repo stars) are all stored in text files.
+
+## Requirements
+
+In order to use Cartulary you need a GitHub account and active repositories.
+
+You can also benefit somewhat if you utilize the URL shortening service known as [AdF.ly](http://adf.ly/?id=1560900), but this is not a requirement.
+
+## Installation
+
+1. Download the files and extract them onto your computer.
+2. Upload all the files where ever you plan on hosting it.
+3. CHMOD the `data`, `data/tally/get/`, `data/tally/tip/` directories to `777`.
+4. Setup a `database.xml` file and upload it into the `data` directory. (more instructions on how to do that in the next section)
+
+### Setting up your database.xml file
+
+This file is *required* in order to use Cartulary so make sure you create one before hand and keep it up-to-date.
+
+Here is an example XML file:
+
+	<?xml version="1.0" encoding="utf-8"?>
+	<cartulary>
+
+		<category name="PHP" color="a53539">
+			<download name="Cartulary" info="Download Manager" github="cartulary" adfly="" file="" free="true" />
+		</category>
+
+	</cartulary>
+
+Let's explain each field:
+
+In the category tag;
+
+* `name` - The name of the category.
+* `color` - The HTML color code for the category. The # is not required.
+
+
+In the download tag;
+
+* `name` - The name of the download.
+* `info` - A short description of what the download is.
+* `github` - The GitHub repository name for the download.
+* `adfly` - Optional AdF.ly ID to the download location.
+* `file` - The filename for the download.
+* `free` - This is currently not used. Will be used for future premium support.
+
+You can create as many categories as you wish, but keep in mind they are listed in the footer area so creating too many may result in a broken layout (a fix will be made to this if it's a major issue). Categories can have as many downloads as you wish.
+
+## Configuration
+
+All configuration is done in the `config.php` file. I have filled in all the fields that are required with my personal information. Comments are inside the file to explain what is required and what isn't.
+
+
+## Utilizing AdF.ly
+
+AdF.ly (referred to as Adfly from now on!) is a URL shortening service that allows you to earn (a very small amount of) money per useage of your created links. I've coded in a way for you to utilize this with all of your repos. This section explains how you should use this to both get the most out of Adfly and to make things easier
+on you in the long run.
+
+Here are the steps you need to take:
+
+1. Create an [Adfly](http://adf.ly/?id=1560900) account.
+2. For each of your repositories that you wish to have an Adfly ready link use the following URL: `http://yoursite.com/tip.php?file=reponame`
+3. Find the Adfly ID to your link (it will be everything after the slash, something like `A4EKi`).
+4. Enter said ID into the `database.xml` entry for that repository.
+
+That's it. Now users will be able to click the Adfly link on the repo and be taken through the "ad" and given the file they want. A counter has been added to tally up how many people utilize your Adfly link, even if it's not directly from your site!
+
+# Translations
+
+You can translate Cartulary into your native language using the provided `English.php` file inside the `lang` directory. Now do the following:
+
+1. Create a new [gist](https://gist.github.com/) and copy the URL.
+2. Open an issue and title it YOURLANGUAGE language file (eg: Spanish language file) and include the URL to the gist inside.
+
+That's it!
+
+# What's next?
+
+I have a short list which will be updated as I think of things that is located [here](https://github.com/septor/cartulary/blob/master/TODO.mkd).
+
+# Demo
+
+You can't demo it, but you can see it in action [here](http://trickmod.com/)!

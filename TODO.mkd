@@ -1,0 +1,7 @@
+# TODO
+
+The following are items I plan on implementing over time.
+
+* Support for premium downloads.
+* Script to directly manipulate the database.xml file.
+* Support for external file locations.

@@ -1,0 +1,7 @@
+files/*.zip
+files/*.rar
+files/*.7z
+files/*.exe
+data/database.xml
+data/tally/get/*.txt
+data/tally/tip/*.txt
