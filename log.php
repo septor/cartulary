@@ -75,16 +75,6 @@ $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
 			</div>
 
 			<div id='footer'>
-				<div class='categories'>
-					<?php
-
-					foreach($categories as $key => $cat)
-					{
-						echo "<span style='color: #".$colors[$key].";'>".$cat."</span> ";
-					}
-
-					?>
-				</div>
 				<div class='copyright'>
 					<?php echo $config['footer']; ?> <a href='#top'>&uarr;</a>
 				</div>
