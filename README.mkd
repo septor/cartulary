@@ -27,7 +27,7 @@ Here is an example XML file:
 	<cartulary>
 
 		<category name="PHP" color="a53539">
-			<download name="Cartulary" info="Download Manager" github="cartulary" version="0.1.0" adfly="" file="" free="true" />
+			<download name="Cartulary" info="Download Manager" github="cartulary" version="0.1.0" adfly="" file="" />
 		</category>
 
 	</cartulary>
@@ -42,13 +42,12 @@ In the category tag;
 
 In the download tag;
 
-* `name` - The name of the download.
-* `info` - A short description of what the download is.
-* `github` - The GitHub repository name for the download.
+* `name` - The name of the download. **required**
+* `info` - A short description of what the download is. **required**
+* `github` - The GitHub repository name for the download. **required**
 * `version` - The current version of the download.
 * `adfly` - Optional AdF.ly ID to the download location.
-* `file` - The filename for the download.
-* `free` - This is currently not used. Will be used for future premium support.
+* `file` - The filename for the download. **required**
 
 You can create as many categories as you wish, but keep in mind they are listed in the footer area so creating too many may result in a broken layout (a fix will be made to this if it's a major issue). Categories can have as many downloads as you wish.
 
