@@ -41,6 +41,16 @@ h2 {
 	font-size: 0.7em;
 	margin-left: 5px;
 }
+#bar .donate {
+	float: right;
+	font-size: 0.7em;
+	margin-top: -35px;
+	margin-right: 10px;
+	padding: 6px 12px;
+	letter-spacing: 1px;
+	background-color: #444;
+	border: 1px solid #555;
+}
 
 #content {
 	margin-top: 20px;

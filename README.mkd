@@ -56,6 +56,22 @@ You can create as many categories as you wish, but keep in mind they are listed 
 All configuration is done in the `config.php` file. I have filled in all the fields that are required with my personal information. Comments are inside the file to explain what is required and what isn't.
 
 
+### Activating the Donate button
+
+To do this you need a PayPal account. If you don't have one, get one.
+
+Follow these steps:
+
+1. Login to PayPal.
+2. Click Merchant Services.
+3. Click Create payment buttons for your website.
+4. Click Accept donations.
+5. Fill in the fields to your specifications (Steps 1-3).
+6. Click Create Button at the bottom.
+7. Click the Email tab.
+8. Copy the URL in the box and use that for the `paypal` configuration field.
+
+
 ## Utilizing AdF.ly
 
 AdF.ly (referred to as Adfly from now on!) is a URL shortening service that allows you to earn (a very small amount of) money per useage of your created links. I've coded in a way for you to utilize this with all of your repos. This section explains how you should use this to both get the most out of Adfly and to make things easier

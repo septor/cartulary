@@ -10,6 +10,7 @@ define("INDEX_LAN04", "issues");
 define("INDEX_LAN05", "Fork");
 define("INDEX_LAN06", "Star");
 define("INDEX_LAN07", "Download");
+define("INDEX_LAN08", "Donations Welcome!");
 
 
 // log.php

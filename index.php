@@ -29,6 +29,7 @@ if(!file_exists("data/".$config['cache']) || time() - filemtime("data/".$config[
 			<div id='bar'>
 				<b><?php echo $config['sitename']; ?></b><br />
 				<div class='tag'><?php echo $config['sitetag']; ?></div>
+				<?php if(!empty($config['paypal'])) { ?> <div class='donate'><a href='<?php echo $config['paypal']; ?>'><?php echo INDEX_LAN08; ?></a></div> <?php } ?>
 			</div>
 
 			<div id="content">
