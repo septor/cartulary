@@ -27,7 +27,7 @@ Here is an example XML file:
 	<cartulary>
 
 		<category name="PHP" color="a53539">
-			<download name="Cartulary" info="Download Manager" github="cartulary" version="0.1.0" adfly="cartulary.zip" file="" />
+			<download name="Cartulary" info="Download Manager" github="cartulary" version="0.1.2" adfly="Ghwht" file="cartulary_0.1.2.zip" />
 		</category>
 
 	</cartulary>
@@ -54,6 +54,12 @@ You can create as many categories as you wish, but keep in mind they are listed 
 ## Configuration
 
 All configuration is done in the `config.php` file. I have filled in all the fields that are required with my personal information. Comments are inside the file to explain what is required and what isn't.
+
+### Where do I put my files?
+
+The script looks in the `files` directory. You can micro-manage your files by placing them in subdirectories, but make sure you reflect this in the file parameter of your `database.xml` file. Here's an example:
+
+	<download name="Cartulary" info="Download Manager" github="cartulary" version="0.1.2" adfly="Ghwht" file="cartulary/cartulary_0.1.2.zip" />
 
 
 ### Activating the Donate button
