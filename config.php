@@ -6,13 +6,14 @@
 
 $config = array(
 	'sitename'	=> "Cartulary",
-	'sitetag'	=> "Download Manager powered by XML, PHP, and TXT Files.<br />AdF.ly links provided for you to show support.",
+	'sitetag'	=> "Download Manager powered by XML, PHP, and TXT Files.",
 	'footer'	=> "&copy 2004-".date("Y")." Patrick Weaver",
 	'github'	=> "septor",
 	'file_path'	=> "files/",
 	'cache'		=> "repocache.txt",
 	'linkcolor'	=> "4ad9d9",
-	'language'	=> "English"
+	'language'	=> "English",
+	'paypalme' => "septor"
 );
 
 ?>

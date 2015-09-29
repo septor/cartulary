@@ -64,21 +64,17 @@ The script looks in the `files` directory. You can micro-manage your files by pl
 
 ### Activating the Donate button
 
-To do this you need a PayPal account. If you don't have one, get one.
+To do this you need a PayPal account and a [PayPal.me](http://paypal.me/septor/) URL. If you don't have one, get one.
 
 Follow these steps:
 
-1. Login to PayPal.
-2. Click Merchant Services.
-3. Click Create payment buttons for your website.
-4. Click Accept donations.
-5. Fill in the fields to your specifications (Steps 1-3).
-6. Click Create Button at the bottom.
-7. Click the Email tab.
-8. Copy the URL in the box and use that for the `paypal` configuration field.
+1. Create a PayPal.Me link.
+2. Input your generated name.
 
 
 ## Utilizing AdF.ly
+
+*NOTE: THIS FUNCTIONALITY WILL BE GOING AWAY SOON.*
 
 AdF.ly (referred to as Adfly from now on!) is a URL shortening service that allows you to earn (a very small amount of) money per useage of your created links. I've coded in a way for you to utilize this with all of your repos. This section explains how you should use this to both get the most out of Adfly and to make things easier
 on you in the long run.
