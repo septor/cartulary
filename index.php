@@ -82,10 +82,11 @@ if(!file_exists("data/".$config['cache']) || time() - filemtime("data/".$config[
 								<span class='button' style='float:left;'><a href='get.php?file=".$download['github']."'>".INDEX_LAN07."</a></span>
 								<span class='count'>".number_format(get_count($download['github'], "get"))."</span>";
 
-								if(!empty($download['adfly']))
+								if(!empty($download['tip']) && !empty($config['paypalme']))
 								{
+									$tip_amount = str_replace("$", "", $download['tip']);
 									echo "
-									<span class='button' style='float:right;'><a href='http://adf.ly/".$download['adfly']."'>Ad.Fly</a></span>
+									<span class='button' style='float:right;'><a href='http://paypal.me/".$config['paypalme']."/".$download['tip']."'>Tipload</a></span>
 									<span class='rcount' style='float:right;'>".number_format(get_count($download['github'], "tip"))."</span>";
 								}
 

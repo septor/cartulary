@@ -8,8 +8,6 @@ The information for each download is stored in an XML file and is served up usin
 
 In order to use Cartulary you need a GitHub account and active repositories.
 
-You can also benefit somewhat if you utilize the URL shortening service known as [AdF.ly](http://adf.ly/?id=1560900), but this is not a requirement.
-
 ## Installation
 
 1. Download the files and extract them onto your computer.
@@ -19,7 +17,7 @@ You can also benefit somewhat if you utilize the URL shortening service known as
 
 ### Setting up your database.xml file
 
-This file is *required* in order to use Cartulary so make sure you create one before hand and keep it up-to-date.
+This file is **required** in order to use Cartulary so make sure you create one before hand and keep it up-to-date.
 
 Here is an example XML file:
 
@@ -27,7 +25,7 @@ Here is an example XML file:
 	<cartulary>
 
 		<category name="PHP" color="a53539">
-			<download name="Cartulary" info="Download Manager" github="cartulary" version="0.1.2" adfly="Ghwht" file="cartulary_0.1.2.zip" />
+			<download name="Cartulary" info="Download Manager" github="cartulary" version="0.1.2" tip="1.49" file="cartulary_0.1.2.zip" />
 		</category>
 
 	</cartulary>
@@ -46,7 +44,7 @@ In the download tag;
 * `info` - A short description of what the download is. **required**
 * `github` - The GitHub repository name for the download. **required**
 * `version` - The current version of the download.
-* `adfly` - Optional AdF.ly ID to the download location.
+* `tip` - The donation amount for the download. *does not require a currency symbol.*
 * `file` - The file to download. **required**
 
 You can create as many categories as you wish, but keep in mind they are listed in the footer area so creating too many may result in a broken layout (a fix will be made to this if it's a major issue). Categories can have as many downloads as you wish.
@@ -57,9 +55,9 @@ All configuration is done in the `config.php` file. I have filled in all the fie
 
 ### Where do I put my files?
 
-The script looks in the `files` directory. You can micro-manage your files by placing them in subdirectories, but make sure you reflect this in the file parameter of your `database.xml` file. Here's an example:
+The script looks in the `files` directory by default, but you can change this in the configuration. You can micro-manage your files by placing them in subdirectories, but make sure you reflect this in the file parameter of your `database.xml` file. Here's an example:
 
-	<download name="Cartulary" info="Download Manager" github="cartulary" version="0.1.2" adfly="Ghwht" file="cartulary/cartulary_0.1.2.zip" />
+	<download name="Cartulary" info="Download Manager" github="cartulary" version="0.1.2" tip="1.49" file="cartulary/cartulary_0.1.2.zip" />
 
 
 ### Activating the Donate button
@@ -72,21 +70,11 @@ Follow these steps:
 2. Input your generated name.
 
 
-## Utilizing AdF.ly
+## Utilizing PayPal.Me for Tip links
 
-*NOTE: THIS FUNCTIONALITY WILL BE GOING AWAY SOON.*
+If you've configured the `paypalme` parameter in the configuration file you can add the `tip` tag to any download section of the `database.xml` file. This will allow your visitors the ability to tip your efforts for the file.
 
-AdF.ly (referred to as Adfly from now on!) is a URL shortening service that allows you to earn (a very small amount of) money per useage of your created links. I've coded in a way for you to utilize this with all of your repos. This section explains how you should use this to both get the most out of Adfly and to make things easier
-on you in the long run.
-
-Here are the steps you need to take:
-
-1. Create an [Adfly](http://adf.ly/?id=1560900) account.
-2. For each of your repositories that you wish to have an Adfly ready link use the following URL: `http://yoursite.com/tip.php?file=reponame`
-3. Find the Adfly ID to your link (it will be everything after the slash, something like `A4EKi`).
-4. Enter said ID into the `database.xml` entry for that repository.
-
-That's it. Now users will be able to click the Adfly link on the repo and be taken through the "ad" and given the file they want. A counter has been added to tally up how many people utilize your Adfly link, even if it's not directly from your site!
+*NOTE: It's planned to allow for the download to happen as well as being redirected to the PayPal.Me site. This will come in a future commit.*
 
 # Translations
 
